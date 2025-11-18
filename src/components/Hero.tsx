@@ -77,12 +77,12 @@ export function Hero() {
                                     transition={{ duration: 0.8, delay: 0.4 }}
                                     className="text-5xl lg:text-6xl text-white"
                                 >
-                                    Восстановим ваш
+                                    We'll restore your
                                     <span
                                         className="block bg-gradient-to-r from-red-500 via-red-600 to-red-700 bg-clip-text text-transparent mt-2">
-                    автомобиль
+                    car
                   </span>
-                                    <span className="block text-white mt-2">как новый</span>
+                                    <span className="block text-white mt-2">like new</span>
                                 </motion.h2>
 
                                 <motion.p
@@ -91,7 +91,7 @@ export function Hero() {
                                     transition={{ duration: 0.8, delay: 0.6 }}
                                     className="text-xl text-gray-300 max-w-lg"
                                 >
-                                    Кузовной ремонт • Покраска • Электрика • Реставрация
+                                    Body Repair • Painting • Electrical • Restoration
                                 </motion.p>
 
                                 <motion.div
@@ -105,7 +105,7 @@ export function Hero() {
                                         size="lg"
                                         className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border border-red-500/50 shadow-lg shadow-red-500/50 group"
                                     >
-                                        Записаться на ремонт
+                                        Book Repair
                                         <ArrowRight
                                             className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"/>
                                     </Button>
@@ -115,7 +115,7 @@ export function Hero() {
                                         variant="outline"
                                         className="bg-white/5 text-white border-white/20 hover:bg-white/10 backdrop-blur-sm"
                                     >
-                                        Бесплатная оценка
+                                        Free Estimate
                                     </Button>
                                 </motion.div>
 
@@ -131,7 +131,7 @@ export function Hero() {
                                             <Phone className="w-5 h-5 text-red-500"/>
                                         </div>
                                         <div>
-                                            <div className="text-xs text-gray-500">Звоните</div>
+                                            <div className="text-xs text-gray-500">Call Us</div>
                                             <a
                                                 href="tel:+13472170008"
                                                 className="text-white hover:text-red-500 transition-colors"
@@ -147,7 +147,7 @@ export function Hero() {
                                             <MapPin className="w-5 h-5 text-red-500"/>
                                         </div>
                                         <div>
-                                            <div className="text-xs text-gray-500">Адрес</div>
+                                            <div className="text-xs text-gray-500">Address</div>
                                             <span className="text-white">2705 W 16th St, Brooklyn, NY</span>
                                         </div>
                                     </div>
@@ -158,8 +158,8 @@ export function Hero() {
                                             <Clock className="w-5 h-5 text-red-500"/>
                                         </div>
                                         <div>
-                                            <div className="text-xs text-gray-500">Режим работы</div>
-                                            <span className="text-white">Пн-Пт: 8:00-18:00 | Сб-Вс: 9:00-18:00</span>
+                                            <div className="text-xs text-gray-500">Working Hours</div>
+                                            <span className="text-white">Mon-Fri: 8:00 AM - 6:00 PM | Sat-Sun: 9:00 AM - 6:00 PM</span>
                                         </div>
                                     </div>
                                 </motion.div>

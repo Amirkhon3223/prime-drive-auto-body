@@ -25,7 +25,7 @@ export function Contact() {
         const success = await sendToTelegram(formData);
 
         if (success) {
-            toast.success("Спасибо! Мы свяжемся с вами в ближайшее время.", {
+            toast.success("Thank you! We will contact you shortly.", {
                 style: {
                     background: '#1f2937',
                     color: '#fff',
@@ -34,7 +34,7 @@ export function Contact() {
             });
             setFormData({ name: "", phone: "", email: "", message: "" });
         } else {
-            toast.error("Ошибка отправки. Позвоните нам по телефону!", {
+            toast.error("Submission error. Please call us!", {
                 style: {
                     background: '#1f2937',
                     color: '#fff',
@@ -45,13 +45,13 @@ export function Contact() {
     };
 
     const hours = [
-        { day: "Понедельник", time: "8:00 - 18:00" },
-        { day: "Вторник", time: "8:00 - 18:00" },
-        { day: "Среда", time: "8:00 - 18:00" },
-        { day: "Четверг", time: "8:00 - 18:00" },
-        { day: "Пятница", time: "8:00 - 18:00" },
-        { day: "Суббота", time: "9:00 - 18:00" },
-        { day: "Воскресенье", time: "9:00 - 18:00" },
+        { day: "Monday", time: "8:00 AM - 6:00 PM" },
+        { day: "Tuesday", time: "8:00 AM - 6:00 PM" },
+        { day: "Wednesday", time: "8:00 AM - 6:00 PM" },
+        { day: "Thursday", time: "8:00 AM - 6:00 PM" },
+        { day: "Friday", time: "8:00 AM - 6:00 PM" },
+        { day: "Saturday", time: "9:00 AM - 6:00 PM" },
+        { day: "Sunday", time: "9:00 AM - 6:00 PM" },
     ];
 
     return (
@@ -78,13 +78,13 @@ export function Contact() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="inline-block mb-4"
                     >
-                        <span className="text-red-500 text-sm tracking-widest uppercase">Контакты</span>
+                        <span className="text-red-500 text-sm tracking-widest uppercase">Contact</span>
                     </motion.div>
                     <h2 className="text-4xl lg:text-5xl text-white mb-4">
-                        Свяжитесь с нами
+                        Get in Touch
                     </h2>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        Запишитесь на ремонт или получите бесплатную оценку
+                        Schedule a repair or get a free estimate
                     </p>
                 </motion.div>
 
@@ -98,9 +98,9 @@ export function Contact() {
                         <Card
                             className="border-gray-800 bg-gray-950/50 backdrop-blur-sm hover:border-red-500/50 transition-all duration-300 h-full">
                             <CardHeader>
-                                <CardTitle className="text-white">Отправьте заявку</CardTitle>
+                                <CardTitle className="text-white">Send Request</CardTitle>
                                 <CardDescription className="text-gray-400">
-                                    Заполните форму и мы свяжемся с вами в течение часа
+                                    Fill out the form and we'll contact you within an hour
                                 </CardDescription>
                             </CardHeader>
                             <CardContent>
@@ -111,7 +111,7 @@ export function Contact() {
                                         transition={{ delay: 0.4 }}
                                     >
                                         <Input
-                                            placeholder="Ваше имя"
+                                            placeholder="Your name"
                                             value={formData.name}
                                             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                             required
@@ -125,7 +125,7 @@ export function Contact() {
                                     >
                                         <Input
                                             type="tel"
-                                            placeholder="Телефон"
+                                            placeholder="Phone"
                                             value={formData.phone}
                                             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                             required
@@ -139,7 +139,7 @@ export function Contact() {
                                     >
                                         <Input
                                             type="email"
-                                            placeholder="Email (опционально)"
+                                            placeholder="Email (optional)"
                                             value={formData.email}
                                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                             className="bg-gray-900 border-gray-800 text-white placeholder:text-gray-500 focus:border-red-500 focus:ring-red-500/20"
@@ -151,7 +151,7 @@ export function Contact() {
                                         transition={{ delay: 0.7 }}
                                     >
                                         <Textarea
-                                            placeholder="Опишите проблему с автомобилем"
+                                            placeholder="Describe your car problem"
                                             value={formData.message}
                                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                             rows={4}
@@ -168,7 +168,7 @@ export function Contact() {
                                             type="submit"
                                             className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border border-red-500/50 shadow-lg shadow-red-500/30 group"
                                         >
-                                            Отправить заявку
+                                            Submit Request
                                             <Send
                                                 className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"/>
                                         </Button>
@@ -186,7 +186,7 @@ export function Contact() {
                         <Card
                             className="border-gray-800 bg-gray-950/50 backdrop-blur-sm hover:border-red-500/50 transition-all duration-300 h-full">
                             <CardHeader>
-                                <CardTitle className="text-white">Контактная информация</CardTitle>
+                                <CardTitle className="text-white">Contact Information</CardTitle>
                             </CardHeader>
                             <CardContent className="space-y-4">
                                 <motion.a
@@ -202,7 +202,7 @@ export function Contact() {
                                         <div className="text-white group-hover:text-red-400 transition-colors">(347)
                                             217-0008
                                         </div>
-                                        <div className="text-sm text-gray-500">Звоните в рабочее время</div>
+                                        <div className="text-sm text-gray-500">Call during business hours</div>
                                     </div>
                                 </motion.a>
 
@@ -230,7 +230,7 @@ export function Contact() {
                                     </div>
                                     <div>
                                         <div className="text-white">primedrive@yahoo.com</div>
-                                        <div className="text-sm text-gray-500">Ответим в течение 24 часов</div>
+                                        <div className="text-sm text-gray-500">We'll respond within 24 hours</div>
                                     </div>
                                 </motion.div>
                             </CardContent>
@@ -247,7 +247,7 @@ export function Contact() {
                             <CardHeader>
                                 <CardTitle className="flex items-center gap-2 text-white">
                                     <Clock className="w-5 h-5 text-red-500"/>
-                                    Часы работы
+                                    Business Hours
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>

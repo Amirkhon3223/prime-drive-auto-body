@@ -34,7 +34,7 @@ export function Footer() {
                             </div>
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            Профессиональный ремонт и реставрация автомобилей в Бруклине с 2009 года.
+                            Professional auto repair and restoration in Brooklyn since 2009.
                         </p>
                     </div>
 
@@ -42,7 +42,7 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="text-lg mb-4 text-white">Контакты</h3>
+                        <h3 className="text-lg mb-4 text-white">Contacts</h3>
                         <div className="space-y-4 text-sm">
                             <motion.a
                                 href="tel:+13472170008"
@@ -84,10 +84,10 @@ export function Footer() {
                 <div className="border-t border-gray-800 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-sm text-gray-500">
-                            © {new Date().getFullYear()} Prime Drive Auto Body Repair. Все права защищены.
+                            © {new Date().getFullYear()} Prime Drive Auto Body Repair. All rights reserved.
                         </p>
                         <div className="flex gap-6 text-sm">
-                            {["Политика конфиденциальности", "Условия использования", "Cookie"].map((item, i) => (
+                            {["Privacy Policy", "Terms of Use", "Cookies"].map((item, i) => (
                                 <motion.a
                                     key={i}
                                     href="#"

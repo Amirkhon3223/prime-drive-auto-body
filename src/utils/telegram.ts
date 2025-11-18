@@ -10,15 +10,15 @@ interface FormData {
 
 export async function sendToTelegram(data: FormData): Promise<boolean> {
     const message = `
-🚗 <b>Новая заявка с сайта Prime Drive!</b>
+🚗 <b>New request from Prime Drive website!</b>
 
-👤 <b>Имя:</b> ${data.name}
-📱 <b>Телефон:</b> ${data.phone}
+👤 <b>Name:</b> ${data.name}
+📱 <b>Phone:</b> ${data.phone}
 ${data.email ? `📧 <b>Email:</b> ${data.email}\n` : ''}
-💬 <b>Сообщение:</b>
+💬 <b>Message:</b>
 ${data.message}
 
-⏰ <b>Время:</b> ${new Date().toLocaleString('ru-RU')}
+⏰ <b>Time:</b> ${new Date().toLocaleString('en-US')}
 `;
 
     try {

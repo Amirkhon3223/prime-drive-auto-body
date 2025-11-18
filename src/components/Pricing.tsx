@@ -17,42 +17,42 @@ export function Pricing() {
 
     const pricingTiers = [
         {
-            name: "Мелкий ремонт",
-            price: "от $100",
-            description: "Небольшие царапины и повреждения краски",
+            name: "Minor Repair",
+            price: "from $100",
+            description: "Small scratches and paint damage",
             features: [
-                "Удаление мелких царапин",
-                "Локальная покраска",
-                "Полировка поверхности",
-                "Быстрое выполнение",
+                "Removal of minor scratches",
+                "Spot painting",
+                "Surface polishing",
+                "Quick turnaround",
             ],
             color: "from-blue-500 to-blue-600",
         },
         {
-            name: "Средний ремонт",
-            price: "от $2,500",
-            description: "Повреждения средней сложности",
+            name: "Medium Repair",
+            price: "from $2,500",
+            description: "Moderate damage",
             features: [
-                "Кузовные работы",
-                "Покраска деталей",
-                "Ремонт вмятин",
-                "Замена деталей",
-                "Гарантия качества",
+                "Body work",
+                "Part painting",
+                "Dent repair",
+                "Part replacement",
+                "Quality guarantee",
             ],
             highlighted: true,
             color: "from-red-500 to-red-600",
         },
         {
-            name: "Крупный ремонт",
-            price: "от $8,000",
-            description: "Серьезные повреждения после ДТП",
+            name: "Major Repair",
+            price: "from $8,000",
+            description: "Serious accident damage",
             features: [
-                "Восстановление геометрии",
-                "Полная покраска",
-                "Замена комплектующих",
-                "Электрика и механика",
-                "Полная диагностика",
-                "Расширенная гарантия",
+                "Frame alignment",
+                "Full paint job",
+                "Parts replacement",
+                "Electrical and mechanical",
+                "Complete diagnostics",
+                "Extended warranty",
             ],
             color: "from-purple-500 to-purple-600",
         },
@@ -89,13 +89,13 @@ export function Pricing() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="inline-block mb-4"
                     >
-                        <span className="text-red-500 text-sm tracking-widest uppercase">Прозрачные цены</span>
+                        <span className="text-red-500 text-sm tracking-widest uppercase">Transparent Pricing</span>
                     </motion.div>
                     <h2 className="text-4xl lg:text-5xl text-white mb-4">
-                        Честная стоимость
+                        Fair Pricing
                     </h2>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        Окончательная цена зависит от сложности повреждений и модели авто
+                        Final price depends on damage complexity and car model
                     </p>
                 </motion.div>
 
@@ -140,7 +140,7 @@ export function Pricing() {
                                             className="flex items-center gap-1 text-xs text-red-500 mb-2"
                                         >
                                             <Star className="w-3 h-3 fill-red-500"/>
-                                            ПОПУЛЯРНЫЙ ВЫБОР
+                                            MOST POPULAR
                                             <Star className="w-3 h-3 fill-red-500"/>
                                         </motion.div>
                                     )}
@@ -181,7 +181,7 @@ export function Pricing() {
                                                 : 'bg-gray-800 hover:bg-gray-700 text-white border border-gray-700'
                                         } transition-all duration-300`}
                                     >
-                                        Получить оценку
+                                        Get Quote
                                     </Button>
                                 </CardContent>
                             </Card>
@@ -198,8 +198,8 @@ export function Pricing() {
                     <div
                         className="inline-block bg-gray-950/50 backdrop-blur-sm border border-gray-800 rounded-lg px-6 py-4">
                         <p className="text-gray-400">
-                            <span className="text-red-500">*</span> Первичная оценка — бесплатно!
-                            <span className="text-gray-500 ml-2">Окончательная стоимость после диагностики</span>
+                            <span className="text-red-500">*</span> Initial assessment is free!
+                            <span className="text-gray-500 ml-2">Final cost after diagnostics</span>
                         </p>
                     </div>
                 </motion.div>

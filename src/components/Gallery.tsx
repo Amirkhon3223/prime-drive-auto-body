@@ -11,21 +11,21 @@ export function Gallery() {
     const images = [
         {
             src: "https://images.unsplash.com/photo-1708805282676-0c15476eb8a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBkZXRhaWxpbmclMjBwb2xpc2hpbmd8ZW58MXx8fHwxNzYzMzQwOTE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-            alt: "Полировка кузова",
-            title: "Полировка кузова",
-            category: "Детейлинг",
+            alt: "Body Polishing",
+            title: "Body Polishing",
+            category: "Detailing",
         },
         {
             src: "https://images.unsplash.com/photo-1642426312110-65ac029a400b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBlbmdpbmUlMjBkaWFnbm9zdGljfGVufDF8fHx8MTc2MzM0MDkyMHww&ixlib=rb-4.1.0&q=80&w=1080",
-            alt: "Диагностика электрики",
-            title: "Диагностика авто",
-            category: "Электрика",
+            alt: "Electrical Diagnostics",
+            title: "Car Diagnostics",
+            category: "Electrical",
         },
         {
             src: "https://images.unsplash.com/photo-1643701239119-0c1cd6b8c9a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBtZWNoYW5pYyUyMHdvcmslMjBoYW5kc3xlbnwxfHx8fDE3NjMzNDA5MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-            alt: "Механический ремонт",
-            title: "Ремонт и обслуживание",
-            category: "Механика",
+            alt: "Mechanical Repair",
+            title: "Repair and Maintenance",
+            category: "Mechanical",
         },
     ];
 
@@ -56,13 +56,13 @@ export function Gallery() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="inline-block mb-4"
                     >
-                        <span className="text-red-500 text-sm tracking-widest uppercase">Портфолио</span>
+                        <span className="text-red-500 text-sm tracking-widest uppercase">Portfolio</span>
                     </motion.div>
                     <h2 className="text-4xl lg:text-5xl text-white mb-4">
-                        Наши работы
+                        Our Work
                     </h2>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        Примеры выполненных проектов и наше оборудование
+                        Examples of completed projects and our equipment
                     </p>
                 </motion.div>
 
@@ -117,10 +117,10 @@ export function Gallery() {
                     className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6"
                 >
                     {[
-                        { number: "5000+", label: "Довольных клиентов" },
-                        { number: "15+", label: "Лет опыта" },
-                        { number: "99%", label: "Качество работ" },
-                        { number: "24/7", label: "Поддержка" },
+                        { number: "5000+", label: "Satisfied Clients" },
+                        { number: "15+", label: "Years of Experience" },
+                        { number: "99%", label: "Quality Work" },
+                        { number: "24/7", label: "Support" },
                     ].map((stat, i) => (
                         <motion.div
                             key={i}

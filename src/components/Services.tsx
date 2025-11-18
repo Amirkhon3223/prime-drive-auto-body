@@ -10,43 +10,43 @@ export function Services() {
     const services = [
         {
             icon: Paintbrush,
-            title: "Покраска автомобилей",
-            description: "Профессиональная покраска любой сложности. Подбор цвета с компьютерной точностью. Полная или частичная покраска.",
+            title: "Auto Painting",
+            description: "Professional painting of any complexity. Computer-precise color matching. Full or partial painting.",
             color: "from-red-500 to-red-600",
             glow: "red",
         },
         {
             icon: Car,
-            title: "Кузовной ремонт",
-            description: "Восстановление геометрии кузова после ДТП. Ремонт вмятин, царапин и повреждений любой сложности.",
+            title: "Body Repair",
+            description: "Body geometry restoration after accidents. Repair of dents, scratches and damages of any complexity.",
             color: "from-blue-500 to-blue-600",
             glow: "blue",
         },
         {
             icon: Zap,
-            title: "Электрика",
-            description: "Диагностика и ремонт электрооборудования. Установка дополнительного оборудования и аксессуаров.",
+            title: "Electrical",
+            description: "Diagnostics and repair of electrical equipment. Installation of additional equipment and accessories.",
             color: "from-yellow-500 to-yellow-600",
             glow: "yellow",
         },
         {
             icon: Sparkles,
-            title: "Реставрация авто",
-            description: "Полная реставрация классических и раритетных автомобилей. Возвращаем автомобилям первоначальный вид.",
+            title: "Auto Restoration",
+            description: "Complete restoration of classic and vintage cars. Restoring cars to their original appearance.",
             color: "from-purple-500 to-purple-600",
             glow: "purple",
         },
         {
             icon: Wrench,
-            title: "Механический ремонт",
-            description: "Ремонт подвески, тормозной системы, двигателя. Техническое обслуживание всех систем автомобиля.",
+            title: "Mechanical Repair",
+            description: "Repair of suspension, brake system, engine. Technical maintenance of all car systems.",
             color: "from-green-500 to-green-600",
             glow: "green",
         },
         {
             icon: Gauge,
-            title: "Диагностика и тюнинг",
-            description: "Компьютерная диагностика всех систем автомобиля. Чип-тюнинг двигателя. Настройка и улучшение характеристик.",
+            title: "Diagnostics and Tuning",
+            description: "Computer diagnostics of all car systems. Engine chip tuning. Settings and performance improvement.",
             color: "from-cyan-500 to-cyan-600",
             glow: "cyan",
         },
@@ -79,13 +79,13 @@ export function Services() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="inline-block mb-4"
                     >
-                        <span className="text-red-500 text-sm tracking-widest uppercase">Наши услуги</span>
+                        <span className="text-red-500 text-sm tracking-widest uppercase">Our Services</span>
                     </motion.div>
                     <h2 className="text-4xl lg:text-5xl text-white mb-4">
-                        Полный спектр услуг
+                        Full Range of Services
                     </h2>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        От мелкого ремонта до полной реставрации автомобиля
+                        From minor repairs to complete car restoration
                     </p>
                 </motion.div>
 
@@ -151,8 +151,8 @@ export function Services() {
                             </div>
                         </div>
                         <div className="text-left">
-                            <div className="text-white">15+ лет опыта</div>
-                            <div className="text-sm text-gray-400">Более 5000 довольных клиентов</div>
+                            <div className="text-white">15+ Years of Experience</div>
+                            <div className="text-sm text-gray-400">Over 5000 satisfied customers</div>
                         </div>
                     </div>
                 </motion.div>

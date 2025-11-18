@@ -67,10 +67,10 @@ export function Header() {
                                 onClick={() => scrollToSection(item)}
                                 className="text-gray-300 hover:text-red-500 transition-colors relative group"
                             >
-                                {item === "services" && "Услуги"}
-                                {item === "pricing" && "Цены"}
-                                {item === "gallery" && "Работы"}
-                                {item === "contact" && "Контакты"}
+                                {item === "services" && "Services"}
+                                {item === "pricing" && "Pricing"}
+                                {item === "gallery" && "Gallery"}
+                                {item === "contact" && "Contact"}
                                 <span
                                     className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-red-500 to-red-600 group-hover:w-full transition-all duration-300"></span>
                             </motion.button>
@@ -97,7 +97,7 @@ export function Header() {
                                 onClick={() => scrollToSection("contact")}
                                 className="hidden md:block bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border border-red-500/50 shadow-lg shadow-red-500/30"
                             >
-                                Записаться
+                                Book Now
                             </Button>
                         </motion.div>
 
@@ -126,17 +126,17 @@ export function Header() {
                                     onClick={() => scrollToSection(item)}
                                     className="block w-full text-left text-gray-300 hover:text-red-500 transition-colors py-2"
                                 >
-                                    {item === "services" && "Услуги"}
-                                    {item === "pricing" && "Цены"}
-                                    {item === "gallery" && "Работы"}
-                                    {item === "contact" && "Контакты"}
+                                    {item === "services" && "Services"}
+                                    {item === "pricing" && "Pricing"}
+                                    {item === "gallery" && "Gallery"}
+                                    {item === "contact" && "Contact"}
                                 </button>
                             ))}
                             <Button
                                 onClick={() => scrollToSection("contact")}
                                 className="w-full bg-gradient-to-r from-red-600 to-red-700"
                             >
-                                Записаться
+                                Book Now
                             </Button>
                         </div>
                     </motion.div>

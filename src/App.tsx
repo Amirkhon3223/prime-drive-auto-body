@@ -8,16 +8,16 @@ import { Footer } from "./components/Footer";
 import { Toaster } from "./components/ui/sonner";
 
 export default function App() {
-  return (
-    <div className="min-h-screen bg-gray-950">
-      <Header />
-      <Hero />
-      <Services />
-      <Pricing />
-      <Gallery />
-      <Contact />
-      <Footer />
-      <Toaster />
-    </div>
-  );
+    return (
+        <div className="min-h-screen bg-gray-950">
+            <Header/>
+            <Hero/>
+            <Services/>
+            <Pricing/>
+            <Gallery/>
+            <Contact/>
+            <Footer/>
+            <Toaster/>
+        </div>
+    );
 }
